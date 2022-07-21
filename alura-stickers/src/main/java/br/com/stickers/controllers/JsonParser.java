@@ -1,4 +1,4 @@
-package br.com.stickers.model;
+package br.com.stickers.controllers;
 
 import java.util.ArrayList;
 import java.util.HashMap;
