@@ -1,0 +1,4 @@
+/alura-stickers/target/alura-stickers-1.0-SNAPSHOT.jar
+*.class
+*.lst
+/alura-stickers/target/maven-archiver/pom.properties
