@@ -2,13 +2,10 @@ package br.com.stickers;
 
 import br.com.stickers.controllers.CreateImage;
 import br.com.stickers.model.ExtractIMDB;
-import br.com.stickers.model.ExtractNasa;
 import br.com.stickers.model.Image;
-import br.com.stickers.service.ApiConfiguration;
 import br.com.stickers.service.GenerateRequest;
 import br.com.stickers.service.Request;
 import br.com.stickers.view.View;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
@@ -28,14 +25,12 @@ public class App {
 
     var createImage = new CreateImage();
 
-    for(int i = 0; i < 3;  i++){
+    for (int i = 0; i < 3; i++) {
 
       Image image = images.get(i);
       InputStream inputStream = new URL(image.getUrl()).openStream();
-      createImage.builder(inputStream,image.getTitle(), text);
+      createImage.builder(inputStream, image.getTitle(), text);
       view.mostrarJson(images.get(i));
-
     }
-
   }
 }

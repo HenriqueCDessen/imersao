@@ -8,17 +8,17 @@ public class ApiConfiguration {
 
   private static Properties getProperties() throws IOException {
     final Properties properties = new Properties();
-    FileInputStream file = new FileInputStream("alura-stickers/src/main/resources/application.properties");
+    FileInputStream file =
+        new FileInputStream("alura-stickers/src/main/resources/application.properties");
     properties.load(file);
     return properties;
   }
 
-  public String getValueOfProperties(String key)  {
-    try{
+  public String getValueOfProperties(String key) {
+    try {
       return getProperties().getProperty(key);
-    }catch (IOException ex){
+    } catch (IOException ex) {
       throw new RuntimeException(ex);
     }
-
   }
 }

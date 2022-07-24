@@ -1,28 +1,23 @@
 package br.com.stickers.service;
 
-
 import br.com.stickers.model.ExtractIMDB;
-import br.com.stickers.model.ExtractNasa;
 
 public enum GenerateRequest {
-    imdb("api.imdb.endpoint-mock", "api.imdb.key-mock"),
-    nasa("api.nasa.endpoint-mock","api.nasa.key-mock");
+  imdb("api.imdb.endpoint-mock", "api.imdb.key-mock"),
+  nasa("api.nasa.endpoint-mock", "api.nasa.key-mock");
 
-    private final String url;
-    private final String key;
+  private final String url;
+  private final String key;
 
-    ExtractIMDB value;
+  ExtractIMDB value;
 
-    GenerateRequest(String url, String key) {
-        this.url = url;
-        this.key = key;
-    }
+  GenerateRequest(String url, String key) {
+    this.url = url;
+    this.key = key;
+  }
 
-    public String formatedUrl(){
-        ApiConfiguration api = new ApiConfiguration();
-        return api.getValueOfProperties(this.url) + api.getValueOfProperties(this.key);
-    }
-
-
-
+  public String formatedUrl() {
+    ApiConfiguration api = new ApiConfiguration();
+    return api.getValueOfProperties(this.url) + api.getValueOfProperties(this.key);
+  }
 }

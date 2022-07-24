@@ -1,10 +1,6 @@
 package br.com.stickers.view;
 
-import br.com.stickers.controllers.JsonParser;
 import br.com.stickers.model.Image;
-
-import java.util.List;
-import java.util.Map;
 
 public class View {
   public static final String TEXT_WHITE = "\u001B[37m";
@@ -12,8 +8,7 @@ public class View {
 
   public void mostrarJson(Image image) {
 
-      System.out.println(TEXT_GREEN + "Titulo: " + image.getTitle() +TEXT_WHITE );
-      System.out.println(TEXT_WHITE + "Imagem: " + image.getUrl()+ TEXT_WHITE );
-      
+    System.out.println(TEXT_GREEN + "Titulo: " + image.getTitle() + TEXT_WHITE);
+    System.out.println(TEXT_WHITE + "Imagem: " + image.getUrl() + TEXT_WHITE);
   }
 }

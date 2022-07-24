@@ -1,5 +1,12 @@
-br/com/stickers/App.class
-br/com/stickers/service/RequestMovie.class
-br/com/stickers/model/JsonParser.class
+br/com/stickers/controllers/JsonParser.class
 br/com/stickers/view/View.class
+br/com/stickers/model/Image.class
+br/com/stickers/model/ExtractImage.class
+br/com/stickers/model/ExtractNasa.class
+br/com/stickers/App.class
+br/com/stickers/model/ExtractIMDB.class
+br/com/stickers/controllers/CreateImage.class
 br/com/stickers/service/ApiConfiguration.class
+br/com/stickers/service/RequestMovie.class
+br/com/stickers/service/Request.class
+br/com/stickers/service/GenerateRequest.class

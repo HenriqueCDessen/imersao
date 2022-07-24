@@ -2,3 +2,11 @@
 *.class
 *.lst
 /alura-stickers/target/maven-archiver/pom.properties
+/alura-stickers/target/classes/br/com/stickers/view/View.class
+/alura-stickers/target/classes/application.properties
+/alura-stickers/target/classes/br/com/stickers/App.class
+/alura-stickers/target/classes/br/com/stickers/model/JsonParser.class
+/alura-stickers/target/classes/br/com/stickers/service/ApiConfiguration.class
+/alura-stickers/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+/alura-stickers/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+/alura-stickers/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst

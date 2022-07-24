@@ -11,10 +11,11 @@ public class CreateImage {
 
   public void builder(InputStream inputStream, String nomeArquivo, String phrase) {
 
-    try{
+    try {
       BufferedImage originalImage = ImageIO.read(inputStream);
       int height = originalImage.getHeight() + 200;
-      BufferedImage refactorImage = new BufferedImage(originalImage.getWidth(), height, BufferedImage.TRANSLUCENT);
+      BufferedImage refactorImage =
+          new BufferedImage(originalImage.getWidth(), height, BufferedImage.TRANSLUCENT);
 
       Graphics2D graphics = (Graphics2D) refactorImage.getGraphics();
       graphics.drawImage(originalImage, 0, 0, null);
@@ -23,10 +24,10 @@ public class CreateImage {
       graphics.setColor(Color.YELLOW);
       graphics.drawString(phrase, 0, height - 100);
 
-      ImageIO.write(refactorImage, "png", new File("alura-stickers/images/output/" + nomeArquivo + ".png"));
-    }catch (IOException ex) {
+      ImageIO.write(
+          refactorImage, "png", new File("alura-stickers/images/output/" + nomeArquivo + ".png"));
+    } catch (IOException ex) {
       throw new RuntimeException(ex);
     }
-
   }
 }
